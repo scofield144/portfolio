@@ -1,4 +1,6 @@
-import ExperienceCard from '@src/components/sections/ExperienceCard';
+import ExperienceCard from "@/components/sections/ExperienceCard";
+
+;
 
 export default function Experience() {
 
@@ -7,7 +9,7 @@ export default function Experience() {
         company: "watchtower - Bethel",
         role: "IT Specialist, Programmer, and Project Manager",
         period: "October 2023 - Present",
-        responsabilities: [
+        responsibilities: [
             "Microsoft 365 Solutions: Lead deployment/optimization of SharePoint, Power Automate, and Microsoft 365 tools, automating workflows and enhancing cross-departmental collaboration.",
             "Moodle Platform: Oversee full-cycle production of educational courses (content development, platform customization, user training) for seamless learning delivery.",
             "Project Management: Align IT projects with organizational goals via cross-functional collaboration, ensuring timely delivery and resource efficiency.",
