@@ -14,23 +14,23 @@ export default function AboutPage() {
       {/* Education Section */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-blue-600">Formação e Influência Profissional</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-blue-600">Professional Education and Influence</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm font-medium mb-3">
                 2020 - 2023
               </div>
-              <h3 className="text-xl font-bold mb-2 text-blue-600">Instituto Superior de Tecnologias e Ciências (ISPTEC)</h3>
-              <p className="text-gray-600">Engenharia Informatica</p>
+              <h3 className="text-xl font-bold mb-2 text-blue-600">Superior Institute of Technologies and Sciences (ISPTEC)</h3>
+              <p className="text-gray-600">Computer Engineering</p>
             </div>
             
             <div className="bg-gray-50 p-6 rounded-lg text-blue-600">
               <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm font-medium mb-3">
                 2015 - 2019
               </div>
-              <h3 className="text-xl font-bold mb-2 text-blue-600">Instituto Medio Politecnico Alda Lara</h3>
-              <p className="text-gray-600">Ensino Médio, Informática</p>
+              <h3 className="text-xl font-bold mb-2 text-blue-600">Alda Lara Polytechnic Middle Institute (IMPAL)  </h3>
+              <p className="text-gray-600">High School Diploma, Computer Science</p>
             </div>
           </div>
         </div>
@@ -41,22 +41,20 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Motivação na Carreira de Tecnologia</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Motivation in the Technology Career</h2>
               <p className="text-gray-600 mb-4">
-                Desde criança, sempre fui fascinado por computadores e pela forma como a
-                tecnologia pode transformar vidas. Decidi seguir Engenharia Informática para
-                transformar essa paixão em uma carreira que impacta positivamente as pessoas.
+                   Since childhood, I have always been fascinated by computers and by how technology can transform lives. I decided to pursue Computer Engineering to turn this passion into a career that positively impacts people.
               </p>
               <p className="text-gray-600">
-                Acredito no poder da tecnologia como ferramenta de transformação social,
-                especialmente em contextos em desenvolvimento como Angola, onde soluções 
-                inovadoras podem resolver desafios significativos nas áreas de educação,
-                saúde e infraestrutura.
+                                    I believe in the power of technology as a tool for social transformation,
+                  especially in developing contexts like Angola, where innovative solutions
+                  can solve significant challenges in the areas of education,
+                  health, and infrastructure.
               </p>
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h2 className="text-2xl font-bold mb-4 text-blue-600">Habilidades Técnicas</h2>
+              <h2 className="text-2xl font-bold mb-4 text-blue-600">              Technical Skills</h2>
               
               <div className="space-y-4">
                 <div>
@@ -119,11 +117,8 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Hobbies e Interesses Pessoais</h2>
-              <p className="text-gray-600 mb-6">
-                Nos meus momentos livres, gosto de jogar xadrez, explorar novas tecnologias e
-                participar de hackathons. Também adoro viajar e conhecer novas culturas, o que me
-                inspira a pensar de forma criativa.
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Hobbies and Personal Interests</h2>
+              <p className="text-gray-600 mb-6">              In my free time, I enjoy playing games, watching anime, exploring new technologies, and participating in conversations. I also love reading and learning about new cultures, which inspires me to think creatively.
               </p>
               
               <div className="grid grid-cols-2 gap-4">
@@ -134,7 +129,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <span className="text-gray-600">Xadrez</span>
+                  <span className="text-gray-600">Anime, K-Drama</span>
                 </div>
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-2 rounded mr-3">
@@ -142,7 +137,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                     </svg>
                   </div>
-                  <span className="text-gray-600">Viagens</span>
+                  <span className="text-gray-600">Read</span>
                 </div>
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-2 rounded mr-3">
@@ -150,7 +145,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                   </div>
-                  <span className="text-gray-600">Programação</span>
+                  <span className="text-gray-600">Programming</span>
                 </div>
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-2 rounded mr-3">
@@ -158,17 +153,17 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
                   </div>
-                  <span className="text-gray-600">Hackathons</span>
+                  <span className="text-gray-600">Talk</span>
                 </div>
               </div>
             </div>
             
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Objetivos Profissionais Futuros</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">              Future Professional Goals</h2>
               <p className="text-gray-600 mb-6">
-                Meu objetivo é me especializar em inteligência artificial e machine learning,
-                contribuindo para projetos que resolvam problemas reais na África e no mundo.
-                Também pretendo mentorar jovens aspirantes a profissionais de tecnologia.
+                My goal is to specialize in DevOps and Artificial Intelligence,
+                contributing to projects that solve real problems in Africa and around the world.
+                I also intend to mentor young aspiring technology professionals.
               </p>
               
               <div className="space-y-4">
@@ -178,7 +173,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="ml-4 text-gray-600">Especialização em inteligência artificial e aprendizado de máquina</p>
+                  <p className="ml-4 text-gray-600">Specialization in DevOps and Artificial Intelligence</p>
                 </div>
                 <div className="flex">
                   <div className="flex-shrink-0">
@@ -186,7 +181,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="ml-4 text-gray-600">Desenvolvimento de soluções tecnológicas para desafios locais em Angola</p>
+                  <p className="ml-4 text-gray-600">Development of technological solutions for local challenges in Angola</p>
                 </div>
                 <div className="flex">
                   <div className="flex-shrink-0">
@@ -194,7 +189,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="ml-4 text-gray-600">Mentoria para jovens na área de tecnologia</p>
+                  <p className="ml-4 text-gray-600">Mentoring young people in the technology field</p>
                 </div>
                 <div className="flex">
                   <div className="flex-shrink-0">
@@ -202,7 +197,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                  <p className="ml-4 text-gray-600">Contribuição para projetos de código aberto na área de infraestrutura cloud</p>
+                  <p className="ml-4 text-gray-600">Contributing to open-source projects in the cloud infrastructure area</p>
                 </div>
               </div>
             </div>

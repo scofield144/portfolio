@@ -18,7 +18,7 @@ const Navbar = () => {
                         <span className="text-blue-600">Fabio Tales Victorino </span> 
                     </Link>
                     <div className="text-sm px-2 py-1 rounded bg-blue-100 text-blue-800">
-                        DevOps
+                        DevOps 
                     </div>
                 </div>
                 {/* dektop navegation */}

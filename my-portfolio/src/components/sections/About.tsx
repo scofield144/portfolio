@@ -11,24 +11,23 @@ const About = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-gray-800">Formação e Influência Profissional</h3>
+            <h3 className="text-2xl font-bold mb-6 text-gray-800">            Professional Education and Influence</h3>
             
             <div className="mb-6">
-              <h4 className="text-xl font-semibold text-blue-600">Instituto Superior de Tecnologias e Ciências (ISPTEC)</h4>
-              <p className="text-gray-600">Engenharia Informatica · (2020 - 2023)</p>
+              <h4 className="text-xl font-semibold text-blue-600">              Superior Institute of Technologies and Sciences(ISPTEC)</h4>
+              <p className="text-gray-600">              Computer Engineering · (2020 - 2023)</p>
             </div>
             
             <div className="mb-6">
               <h4 className="text-xl font-semibold text-blue-600">Instituto Medio Politecnico Alda Lara</h4>
-              <p className="text-gray-600">Ensino Médio, Informática (2015 - 2019)</p>
+              <p className="text-gray-600">              Computer Engineering (2015 - 2019)</p>
             </div>
             
             <div>
               <h4 className="text-xl font-semibold text-blue-600">Motivação na Carreira de Tecnologia</h4>
               <p className="text-gray-600">
-                Desde criança, sempre fui fascinado por computadores e pela forma como a
-                tecnologia pode transformar vidas. Decidi seguir Engenharia Informática para
-                transformar essa paixão em uma carreira que impacta positivamente as pessoas.
+                                   Since childhood, I have always been fascinated by computers and by how technology can transform lives. I decided to pursue Computer Engineering to turn this passion into a career that positively impacts people.
+
               </p>
             </div>
           </div>
@@ -37,18 +36,19 @@ const About = () => {
             <div className="mb-8">
               <h3 className="text-2xl font-bold mb-4 text-gray-800">Hobbies e Interesses Pessoais</h3>
               <p className="text-gray-600">
-                Nos meus momentos livres, gosto de jogar xadrez, explorar novas tecnologias e
-                participar de hackathons. Também adoro viajar e conhecer novas culturas, o que me
-                inspira a pensar de forma criativa.
+                I believe in the power of technology as a tool for social transformation,
+                  especially in developing contexts like Angola, where innovative solutions
+                  can solve significant challenges in the areas of education,
+                  health, and infrastructure.
               </p>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">Objetivos Profissionais Futuros</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">Future Professional Goals</h3>
               <p className="text-gray-600">
-                Meu objetivo é me especializar em inteligência artificial e machine learning,
-                contribuindo para projetos que resolvam problemas reais na África e no mundo.
-                Também pretendo mentorar jovens aspirantes a profissionais de tecnologia.
+                My goal is to specialize in DevOps and Artificial Intelligence,
+                contributing to projects that solve real problems in Africa and around the world.
+                I also intend to mentor young aspiring technology professionals.
               </p>
             </div>
           </div>

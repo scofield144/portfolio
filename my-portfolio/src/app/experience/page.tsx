@@ -29,7 +29,7 @@ export default function Experience() {
     },
     {
       id: 3,
-      company: "Fazenda 27, Lda",
+      company: "SCO",
       role: "Freelance Web Developer, UI/UX Designer & Project Advisor",
       period: "Oct 2023 – Present",
       responsibilities: [
@@ -45,7 +45,7 @@ export default function Experience() {
                 <div className='text-center mb-12'>
                     <h1 className="text-3xl md:text-4xl font-bold mb-4 text-blue-600">Professional Experience</h1>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        my professional journey spanning various roles in IT, development, and project manager
+                        My professional journey spanning various roles in IT, development, and project manager
                     </p>
                     <div className="w-24 h-1 bg-blue-600 mx-auto mt-4"></div>
                 </div>
