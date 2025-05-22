@@ -39,7 +39,7 @@ const Footer = ()=> {
 
 {/* Contact */}
                 <div>
-                    <h3 className="text-xl font-bold mb-4">Connect</h3>
+                    <h3 className="text-xl font-bold mb-4">Say hi</h3>
                     <div className="flex space-x-4">
                         {/* social media icons */}
                         <a href="https://x.com/FbioVictorino1" className="text-gray-300 hover:text-white">

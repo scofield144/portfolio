@@ -35,7 +35,7 @@ export default function ProjectsPage() {
     <div className="min-h-screen py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-blue-600">My Projects</h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             A showcase of my technical projects, applications, and development work.
           </p>

@@ -35,7 +35,12 @@ const Hero = () => {
           <div className="hidden md:block">
             {/* Placeholder for profile image or illustration */}
             <div className="bg-blue-700 h-96 w-96 rounded-full mx-auto flex items-center justify-center">
-              <span className="text-6xl font-bold">FTV</span>
+              {/* <img
+                src="/src/img/me.jpeg"
+                alt="Profile"
+                className="rounded-full h-80 w-80 object-cover"
+              /> */}
+              <span className="text-6xl font-bold">SCOFIELD</span>
             </div>
           </div>
         </div>

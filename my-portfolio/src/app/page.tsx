@@ -2,7 +2,6 @@ import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Link from 'next/link';
 
-
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -10,7 +9,8 @@ export default function Home() {
       <Hero/>
 {/* quick links section */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-6 md:px-16">
+        <div className="max-w-7xl mx-auto px-6 md:px-16 text-black">
+
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
             <Link
              href="/Experience" 

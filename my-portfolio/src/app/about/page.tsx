@@ -14,22 +14,22 @@ export default function AboutPage() {
       {/* Education Section */}
       <section className="py-16 bg-white">
         <div className="max-w-5xl mx-auto px-6 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Formação e Influência Profissional</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center text-blue-600">Formação e Influência Profissional</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-6 rounded-lg">
               <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm font-medium mb-3">
                 2020 - 2023
               </div>
-              <h3 className="text-xl font-bold mb-2">Instituto Superior de Tecnologias e Ciências (ISPTEC)</h3>
+              <h3 className="text-xl font-bold mb-2 text-blue-600">Instituto Superior de Tecnologias e Ciências (ISPTEC)</h3>
               <p className="text-gray-600">Engenharia Informatica</p>
             </div>
             
-            <div className="bg-gray-50 p-6 rounded-lg">
+            <div className="bg-gray-50 p-6 rounded-lg text-blue-600">
               <div className="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded text-sm font-medium mb-3">
                 2015 - 2019
               </div>
-              <h3 className="text-xl font-bold mb-2">Instituto Medio Politecnico Alda Lara</h3>
+              <h3 className="text-xl font-bold mb-2 text-blue-600">Instituto Medio Politecnico Alda Lara</h3>
               <p className="text-gray-600">Ensino Médio, Informática</p>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">Motivação na Carreira de Tecnologia</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Motivação na Carreira de Tecnologia</h2>
               <p className="text-gray-600 mb-4">
                 Desde criança, sempre fui fascinado por computadores e pela forma como a
                 tecnologia pode transformar vidas. Decidi seguir Engenharia Informática para
@@ -61,7 +61,7 @@ export default function AboutPage() {
               <div className="space-y-4">
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">Cloud & Network Management</span>
+                    <span className="font-medium text-blue-500">Cloud & Network Management</span>
                     <span>90%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
@@ -71,7 +71,7 @@ export default function AboutPage() {
                 
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">Programming (Java, TypeScript)</span>
+                    <span className="font-medium text-blue-500">Programming (Java, TypeScript)</span>
                     <span>85%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
@@ -81,7 +81,7 @@ export default function AboutPage() {
                 
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">DevOps Practices</span>
+                    <span className="font-medium text-blue-500">DevOps Practices</span>
                     <span>80%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
@@ -91,7 +91,7 @@ export default function AboutPage() {
                 
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">UI/UX Design</span>
+                    <span className="font-medium text-blue-500">UI/UX Design</span>
                     <span>75%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
@@ -101,7 +101,7 @@ export default function AboutPage() {
                 
                 <div>
                   <div className="flex justify-between mb-1">
-                    <span className="font-medium">Project Management</span>
+                    <span className="font-medium text-blue-500">Project Management</span>
                     <span>85%</span>
                   </div>
                   <div className="w-full bg-gray-200 rounded-full h-2">
@@ -119,7 +119,7 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">Hobbies e Interesses Pessoais</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Hobbies e Interesses Pessoais</h2>
               <p className="text-gray-600 mb-6">
                 Nos meus momentos livres, gosto de jogar xadrez, explorar novas tecnologias e
                 participar de hackathons. Também adoro viajar e conhecer novas culturas, o que me
@@ -134,7 +134,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <span>Xadrez</span>
+                  <span className="text-gray-600">Xadrez</span>
                 </div>
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-2 rounded mr-3">
@@ -142,7 +142,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                     </svg>
                   </div>
-                  <span>Viagens</span>
+                  <span className="text-gray-600">Viagens</span>
                 </div>
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-2 rounded mr-3">
@@ -150,7 +150,7 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                   </div>
-                  <span>Programação</span>
+                  <span className="text-gray-600">Programação</span>
                 </div>
                 <div className="flex items-center">
                   <div className="bg-blue-100 p-2 rounded mr-3">
@@ -158,13 +158,13 @@ export default function AboutPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                     </svg>
                   </div>
-                  <span>Hackathons</span>
+                  <span className="text-gray-600">Hackathons</span>
                 </div>
               </div>
             </div>
             
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">Objetivos Profissionais Futuros</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-600">Objetivos Profissionais Futuros</h2>
               <p className="text-gray-600 mb-6">
                 Meu objetivo é me especializar em inteligência artificial e machine learning,
                 contribuindo para projetos que resolvam problemas reais na África e no mundo.

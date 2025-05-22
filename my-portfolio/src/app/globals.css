@@ -1,6 +1,4 @@
-/* @import "tailwindcss";
-
-:root {
+/*:root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -24,9 +22,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
+/*
+  The following Tailwind directives require processing by Tailwind CSS (PostCSS).
+  Make sure your build tool is configured to use Tailwind.
+*/
+@import "tailwindcss";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
