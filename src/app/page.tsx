@@ -10,14 +10,16 @@ export default function HomePage() {
   return (
     <div className="space-y-12">
       {/* Hero Section */}
-      <section className="text-center py-12 bg-gradient-to-br from-primary/10 to-accent/10 rounded-lg shadow-sm">
+      <section className="text-center py-12 bg-gradient-to-br from-primary/10
+       to-accent/10 rounded-lg shadow-sm">
         <div className="container mx-auto px-4">
           <Image 
-            src="https://placehold.co/150x150.png" 
+            src="/profile-photo.jpeg" 
             alt="Fabio Tales Victorino" 
             width={150} 
             height={150}
-            className="rounded-full mx-auto mb-6 border-4 border-card shadow-lg"
+            className="rounded-full mx-auto mb-6 border-4 
+            border-card shadow-lg"
             data-ai-hint="profile photo"
           />
           <h1 className="text-5xl font-extrabold text-primary mb-3 tracking-tight">
