@@ -1,6 +1,10 @@
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Link from 'next/link';
+import Experience from './experience/page';
+import Footer from '@/components/ui/Footer';
+import { Inter } from 'next/font/google';
+import InteractiveSection from '@/components/sections/InteractiveSection/page';
 
 export default function Home() {
   return (
@@ -8,7 +12,7 @@ export default function Home() {
       
       <Hero/>
 {/* quick links section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6 md:px-16 text-black">
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -44,11 +48,9 @@ export default function Home() {
 
           </div>
         </div>
-      </section>
-
+      </section> */}
+    <InteractiveSection/>
       {/* Brief about section */}
-      <About/>
-
     </div>
 
   )
