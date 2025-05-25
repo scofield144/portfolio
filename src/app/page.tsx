@@ -4,42 +4,61 @@ import { Separator } from '@/components/ui/separator';
 import { personalInfo, educationData, aboutData } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Badge } from '@/components/ui/badge';
+import { Twitter, Linkedin, Github, Languages, Sun } from 'lucide-react';
 
 export default function HomePage() {
   return (
     <div className="space-y-12">
-      {/* Hero Section */}
-      <section className="text-center py-12 bg-card rounded-lg shadow-sm border border-border">
-        <div className="container mx-auto px-4">
-          <Image 
-            src="/profile-photo.jpeg" 
-            alt="Fabio Tales Victorino" 
-            width={150} 
-            height={150}
-            className="rounded-full mx-auto mb-6 border-4 border-accent shadow-lg"
-            data-ai-hint="profile photo"
+      {/* New Hero Section */}
+      <section className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 md:gap-8 py-10 md:py-12">
+        {/* Left Side: Image Placeholder */}
+        <div className="flex-shrink-0">
+          <Image
+            src="https://placehold.co/120x160.png"
+            alt="Fabio Tales Victorino placeholder"
+            width={120}
+            height={160}
+            className="rounded-xl shadow-md border border-border object-cover"
+            data-ai-hint="abstract geometric"
           />
-          <h1 className="text-5xl font-heading text-primary mb-3 tracking-tight hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
-            {personalInfo.name}
-          </h1>
-          <p className="text-2xl font-heading font-semibold text-accent mb-6">
-            {personalInfo.title}
-          </p>
-          <p className="text-lg text-foreground/80 max-w-2xl mx-auto mb-8">
-            {personalInfo.portfolioIntro}
-          </p>
-          <div className="space-x-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-md transition-transform hover:scale-105">
-              <Link href="/projects">
-                <span role="img" aria-label="laptop" className="mr-2 text-2xl">💻</span> View My Work
-              </Link>
+        </div>
+
+        {/* Right Side: Name, Badge, Icons */}
+        <div className="flex flex-col gap-4 items-center md:items-start w-full max-w-md md:max-w-none">
+          {/* Name and Badge Container */}
+          <div className="bg-card p-4 rounded-lg shadow-sm border border-border w-full">
+            <div className="flex items-baseline gap-2">
+              <h1 className="text-3xl font-heading text-primary leading-tight">Fabio</h1>
+              <Badge className="bg-yellow-400 text-black hover:bg-yellow-500 px-2.5 py-1 text-xs font-semibold self-center">DevOps</Badge>
+            </div>
+            <h2 className="text-3xl font-heading text-primary leading-tight">Tales Victorino</h2>
+          </div>
+
+          {/* Icons Container */}
+          <div className="bg-card p-3 rounded-lg shadow-sm border border-border flex gap-3 w-full justify-center md:justify-start">
+            <Link href="https://twitter.com/fabiovictorino" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-foreground/70 hover:text-primary transition-colors">
+              <Twitter className="h-5 w-5" />
+            </Link>
+            <Link href="https://linkedin.com/in/fabiovictorino" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-foreground/70 hover:text-primary transition-colors">
+              <Linkedin className="h-5 w-5" />
+            </Link>
+            <Link href="https://github.com/fabiovictorino" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-foreground/70 hover:text-primary transition-colors">
+              <Github className="h-5 w-5" />
+            </Link>
+            <Button variant="ghost" size="icon" aria-label="Translate" className="text-foreground/70 hover:text-primary h-7 w-7 p-0">
+              <Languages className="h-5 w-5" />
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10 shadow-md transition-transform hover:scale-105">
-              <Link href="/contact">
-                <span role="img" aria-label="envelope" className="mr-2 text-2xl">✉️</span> Get In Touch
-              </Link>
+            <Button variant="ghost" size="icon" aria-label="Toggle Theme" className="text-foreground/70 hover:text-primary h-7 w-7 p-0">
+              {/* This would need theme context integration for actual toggling */}
+              <Sun className="h-5 w-5" />
             </Button>
           </div>
+          
+          {/* Optional: Short intro if needed, adapted from personalInfo.portfolioIntro */}
+          <p className="text-md text-foreground/80 mt-2 text-center md:text-left">
+            {personalInfo.portfolioIntro}
+          </p>
         </div>
       </section>
 
