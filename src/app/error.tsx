@@ -2,7 +2,6 @@
 
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { AlertCircle } from 'lucide-react';
 
 export default function Error({
   error,
@@ -18,12 +17,12 @@ export default function Error({
 
   return (
     <div className="flex flex-col items-center justify-center min-h-[calc(100vh-10rem)] text-center px-4">
-      <AlertCircle className="h-24 w-24 text-destructive mb-6" />
-      <h2 className="text-3xl font-bold text-destructive mb-4">Something went wrong!</h2>
-      <p className="text-lg text-muted-foreground mb-8 max-w-md">
+      <span role="img" aria-label="warning" className="text-7xl text-destructive mb-6">⚠️</span>
+      <h2 className="text-3xl font-bold font-heading text-destructive mb-4">Something went wrong!</h2>
+      <p className="text-lg text-muted-foreground mb-8 max-w-md font-ubuntu">
         We encountered an unexpected issue. Please try again, or if the problem persists, contact support.
       </p>
-      <pre className="text-xs bg-muted p-4 rounded-md mb-8 overflow-auto max-w-full">
+      <pre className="text-xs bg-muted p-4 rounded-md mb-8 overflow-auto max-w-full font-mono">
         {error.message}
         {error.digest && ` (Digest: ${error.digest})`}
       </pre>
@@ -33,7 +32,7 @@ export default function Error({
           () => reset()
         }
         size="lg"
-        className="bg-primary hover:bg-primary/90 text-primary-foreground"
+        className="bg-primary hover:bg-primary/90 text-primary-foreground font-heading"
       >
         Try again
       </Button>

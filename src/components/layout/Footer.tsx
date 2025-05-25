@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react'; // Keep brand icons
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -15,10 +15,10 @@ export default function Footer() {
             <Linkedin className="h-6 w-6" />
           </Link>
           <Link href="mailto:fabio.victorino@example.com" aria-label="Email" className="text-muted-foreground hover:text-primary transition-colors">
-            <Mail className="h-6 w-6" />
+            <span role="img" aria-label="envelope" className="text-2xl">✉️</span>
           </Link>
         </div>
-        <p className="text-sm">
+        <p className="text-sm font-ubuntu">
           &copy; {currentYear} Fabio Tales Victorino. All rights reserved.
         </p>
       </div>

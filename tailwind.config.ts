@@ -9,6 +9,12 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        sans: ['var(--font-ubuntu)', 'sans-serif'], // Default body font
+        heading: ['var(--font-montserrat)', 'sans-serif'], // Default heading font
+        ubuntu: ['var(--font-ubuntu)', 'sans-serif'], // Explicitly define ubuntu
+        montserrat: ['var(--font-montserrat)', 'sans-serif'], // Explicitly define montserrat
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

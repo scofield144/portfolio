@@ -1,27 +1,27 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { experienceData, Experience } from '@/lib/data';
-import { Briefcase, CalendarDays } from 'lucide-react';
+import { CalendarDays } from 'lucide-react'; // Keep for specific use if emoji doesn't fit
 
 function ExperienceItem({ item }: { item: Experience }) {
   return (
-    <Card className="mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1">
+    <Card className="mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1 border border-border">
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
-          <CardTitle className="text-2xl font-semibold text-primary flex items-center">
-            {item.icon && <item.icon className="mr-3 h-7 w-7 text-accent flex-shrink-0" />}
+          <CardTitle className="text-2xl font-heading text-primary flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
+            {item.emojiIcon && <span role="img" aria-label={item.role} className="mr-3 text-3xl text-accent flex-shrink-0">{item.emojiIcon}</span>}
             {item.role}
           </CardTitle>
           <div className="text-sm text-muted-foreground flex items-center whitespace-nowrap">
-            <CalendarDays className="mr-2 h-4 w-4" />
+            <CalendarDays className="mr-2 h-4 w-4" /> {/* Or replace with 📅 emoji if preferred */}
             {item.period}
           </div>
         </div>
-        <CardDescription className="text-lg text-foreground/80 ml-10">{item.company}</CardDescription>
+        <CardDescription className="text-lg text-foreground/80 ml-10 font-ubuntu">{item.company}</CardDescription>
       </CardHeader>
       <CardContent className="ml-10">
         <ul className="list-disc list-outside space-y-2 pl-5 text-foreground/90">
           {item.responsibilities.map((resp, index) => (
-            <li key={index} className="text-sm leading-relaxed">{resp}</li>
+            <li key={index} className="text-sm leading-relaxed font-ubuntu">{resp}</li>
           ))}
         </ul>
       </CardContent>
@@ -33,8 +33,8 @@ export default function ExperiencePage() {
   return (
     <div className="space-y-10">
       <header className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-primary tracking-tight">My Professional Journey</h1>
-        <p className="text-lg text-muted-foreground mt-2">A timeline of my roles, responsibilities, and accomplishments.</p>
+        <h1 className="text-4xl font-heading text-primary tracking-tight hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">My Professional Journey</h1>
+        <p className="text-lg text-muted-foreground mt-2 font-ubuntu">A timeline of my roles, responsibilities, and accomplishments.</p>
       </header>
       
       <div className="relative pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:bg-primary/20">

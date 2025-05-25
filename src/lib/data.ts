@@ -1,17 +1,17 @@
 import type { LucideIcon } from 'lucide-react';
-import { BookOpen, Lightbulb, Gamepad2, Target, Briefcase, Building, ExternalLink, FileText, Code2 } from 'lucide-react';
+// Removed Lucide icons that will be replaced by emojis inline
 
 export interface EducationItem {
   institution: string;
   degree: string;
   period: string;
-  icon?: LucideIcon;
+  emojiIcon?: string; // Changed from LucideIcon to string for emoji
 }
 
 export interface AboutItem {
   title: string;
   content: string;
-  icon?: LucideIcon;
+  emojiIcon?: string; // Changed from LucideIcon to string for emoji
 }
 
 export interface Experience {
@@ -20,7 +20,7 @@ export interface Experience {
   company: string;
   period: string;
   responsibilities: string[];
-  icon?: LucideIcon;
+  emojiIcon?: string; // Changed from LucideIcon to string for emoji
 }
 
 export interface Project {
@@ -32,7 +32,7 @@ export interface Project {
   imageHint?: string;
   fontCodeUrl?: string;
   openProjectUrl?: string;
-  icon?: LucideIcon;
+  emojiIcon?: string; // Changed from LucideIcon to string for emoji
 }
 
 export interface Note {
@@ -40,7 +40,7 @@ export interface Note {
   title: string;
   summary: string;
   readMoreLink?: string;
-  icon?: LucideIcon;
+  emojiIcon?: string; // Changed from LucideIcon to string for emoji
 }
 
 export interface PersonalInfo {
@@ -64,13 +64,13 @@ export const educationData: EducationItem[] = [
     institution: "Instituto Superior de Tecnologias e Ciências (ISPTEC)",
     degree: "Engenharia Informatica",
     period: "2020 - 2023",
-    icon: BookOpen,
+    emojiIcon: "🎓",
   },
   {
     institution: "Instituto Medio Politecnico Alda Lara",
     degree: "Ensino Médio, Informática",
     period: "2015 - 2019",
-    icon: BookOpen,
+    emojiIcon: "📚",
   },
 ];
 
@@ -78,17 +78,17 @@ export const aboutData: AboutItem[] = [
   {
     title: "Motivação na Carreira de Tecnologia",
     content: "Desde criança, sempre fui fascinado por computadores e pela forma como a tecnologia pode transformar vidas. Decidi seguir Engenharia Informática para transformar essa paixão em uma carreira que impacta positivamente as pessoas.",
-    icon: Lightbulb,
+    emojiIcon: "💡",
   },
   {
     title: "Hobbies e Interesses Pessoais",
     content: "Nos meus momentos livres, gosto de jogar xadrez, explorar novas tecnologias e participar de hackathons. Também adoro viajar e conhecer novas culturas, o que me inspira a pensar de forma criativa.",
-    icon: Gamepad2,
+    emojiIcon: "🎮",
   },
   {
     title: "Objetivos Profissionais Futuros",
     content: "Meu objetivo é me especializar em inteligência artificial e machine learning, contribuindo para projetos que resolvam problemas reais na África e no mundo. Também pretendo mentorar jovens aspirantes a profissionais de tecnologia.",
-    icon: Target,
+    emojiIcon: "🎯",
   },
 ];
 
@@ -104,7 +104,7 @@ export const experienceData: Experience[] = [
       "Align IT projects with organizational goals via cross-functional collaboration, ensuring timely delivery and resource efficiency.",
       "Troubleshoot systems and maintain reliability/security for staff.",
     ],
-    icon: Briefcase,
+    emojiIcon: "💼",
   },
   {
     id: "exp2",
@@ -116,7 +116,7 @@ export const experienceData: Experience[] = [
       "Create intuitive and visually appealing interfaces, focusing on user experience and accessibility.",
       "Guide clients through project planning, execution, and delivery, ensuring alignment with business goals and timelines.",
     ],
-    icon: Code2,
+    emojiIcon: "🧑‍💻", 
   },
   {
     id: "exp3",
@@ -128,7 +128,7 @@ export const experienceData: Experience[] = [
       "Installed, configured, and maintained CCTV camera networks to ensure robust site security.",
       "Deployed and supported voice-over-IP systems to enhance internal communication efficiency.",
     ],
-    icon: Building,
+    emojiIcon: "🏢",
   },
 ];
 
@@ -140,9 +140,9 @@ export const projectData: Project[] = [
     technologies: ["React", "Tailwind CSS", "TypeScript"],
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "nonprofit organization website",
-    fontCodeUrl: "#", // Replace with actual link
-    openProjectUrl: "#", // Replace with actual link
-    icon: ExternalLink,
+    fontCodeUrl: "#", 
+    openProjectUrl: "#", 
+    emojiIcon: "🌐", 
   },
   {
     id: "proj2",
@@ -151,9 +151,9 @@ export const projectData: Project[] = [
     technologies: ["Java", "NetBeans", "MySQL"],
     imageUrl: "https://placehold.co/600x400.png",
     imageHint: "visa application system",
-    fontCodeUrl: "#", // Replace with actual link
-    openProjectUrl: "#", // Replace with actual link
-    icon: ExternalLink,
+    fontCodeUrl: "#", 
+    openProjectUrl: "#", 
+    emojiIcon: "🛂", 
   },
 ];
 
@@ -163,21 +163,21 @@ export const notesData: Note[] = [
     title: "The Essence of Logical Thinking in Tech",
     summary: "Logical and abstract thinking is essential for solving complex problems, making informed decisions, and developing advanced cognitive skills in the technology field.",
     readMoreLink: "#",
-    icon: FileText,
+    emojiIcon: "📄",
   },
   {
     id: "note2",
     title: "Abstraction: Simplifying Complexity",
     summary: "Abstraction allows us to manage complexity by hiding implementation details and focusing on essential characteristics. It's a cornerstone of good software design.",
     readMoreLink: "#",
-    icon: FileText,
+    emojiIcon: "📄",
   },
   {
     id: "note3",
     title: "Problem Solving Strategies",
     summary: "A quick overview of common problem-solving techniques like divide and conquer, root cause analysis, and pattern recognition that I frequently use.",
     readMoreLink: "#",
-    icon: FileText,
+    emojiIcon: "📄",
   },
 ];
 

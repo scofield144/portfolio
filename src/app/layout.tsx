@@ -1,13 +1,20 @@
 import type { Metadata } from 'next';
-import { Geist } from 'next/font/google'; // Use Geist only for sans-serif
+import { Montserrat, Ubuntu } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const montserrat = Montserrat({
   subsets: ['latin'],
+  variable: '--font-montserrat',
+  weight: ['400', '700'],
+});
+
+const ubuntu = Ubuntu({
+  subsets: ['latin'],
+  variable: '--font-ubuntu',
+  weight: ['400', '500', '700'], // Added 500 for potential medium weight
 });
 
 export const metadata: Metadata = {
@@ -21,8 +28,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geistSans.variable}>
-      <body className="antialiased font-sans flex flex-col min-h-screen">
+    <html lang="en" className={`${montserrat.variable} ${ubuntu.variable}`}>
+      <body className="antialiased font-ubuntu flex flex-col min-h-screen"> {/* Changed default font reference */}
         <Header />
         <main className="flex-grow container mx-auto px-4 py-8">
           {children}
