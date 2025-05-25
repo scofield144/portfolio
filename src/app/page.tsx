@@ -66,8 +66,8 @@ export default function HomePage() {
             {/* Education */}
             <div>
               <h3 className="text-xl font-heading text-foreground mb-4 flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out"> {/* Reduced text size */}
-                <span role="img" aria-label="graduation cap" className="mr-2 text-3xl">🎓</span>
-                Formação e Influência Profissional
+                <span role="img" aria-label="books stack" className="mr-2 text-3xl">📚</span>
+                Education
               </h3>
               <div className="space-y-4">
                 {educationData.map((edu, index) => (
@@ -141,3 +141,4 @@ export default function HomePage() {
     </div>
   );
 }
+
