@@ -15,12 +15,12 @@ export default function HomePage() {
         {/* Left Side: Image Placeholder */}
         <div className="flex-shrink-0">
           <Image
-            src="https://placehold.co/120x160.png"
-            alt="Fabio Tales Victorino placeholder"
+            src="/me.jpeg" // Changed from placeholder URL
+            alt="Fabio Tales Victorino" // Updated alt text
             width={120}
             height={160}
             className="rounded-xl shadow-md border border-border object-cover"
-            data-ai-hint="abstract geometric"
+            // Removed data-ai-hint
           />
         </div>
 
