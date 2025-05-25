@@ -32,13 +32,10 @@ function NoteCard({ note }: { note: Note }) {
 export function NotesSection() {
   return (
     <div className="space-y-10">
-      <header className="text-center mb-12">
-        <h1 className="text-4xl font-heading text-primary tracking-tight flex items-center justify-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
-           <span role="img" aria-label="notebook" className="mr-3 text-4xl">📖</span> My Notes & Insights
+      <header className="mb-12">
+        <h1 className="text-4xl font-heading text-primary tracking-tight flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
+           <span role="img" aria-label="notebook" className="mr-3 text-4xl">📖</span> Notes & Insights
         </h1>
-        <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto font-ubuntu">
-          A curated collection of my personal insights, tips, quick posts, and code snippets that I frequently use across my projects.
-        </p>
       </header>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8">
         {notesData.map((note) => (

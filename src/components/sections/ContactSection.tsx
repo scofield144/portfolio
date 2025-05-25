@@ -8,9 +8,11 @@ import Link from 'next/link';
 export function ContactSection() {
   return (
     <div className="space-y-10">
-      <header className="text-center mb-12">
-        <h1 className="text-4xl font-heading text-primary tracking-tight hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">Get In Touch</h1>
-        <p className="text-lg text-muted-foreground mt-2 font-ubuntu">I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+      <header className="mb-12">
+        <h1 className="text-4xl font-heading text-primary tracking-tight flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
+          <span role="img" aria-label="envelope" className="mr-3 text-4xl">✉️</span>
+          Get In Touch
+        </h1>
       </header>
 
       <div className="grid md:grid-cols-2 gap-8 items-start">

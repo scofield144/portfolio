@@ -33,9 +33,11 @@ function ExperienceItem({ item }: { item: Experience }) {
 export function ExperienceSection() {
   return (
     <div className="space-y-10">
-      <header className="text-center mb-12">
-        <h1 className="text-4xl font-heading text-primary tracking-tight hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">My Professional Journey</h1>
-        <p className="text-lg text-muted-foreground mt-2 font-ubuntu">A timeline of my roles, responsibilities, and accomplishments.</p>
+      <header className="mb-12">
+        <h1 className="text-4xl font-heading text-primary tracking-tight flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
+          <span role="img" aria-label="briefcase" className="mr-3 text-4xl">💼</span>
+          Professional Journey
+        </h1>
       </header>
       
       <div className="relative pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:bg-primary/20">

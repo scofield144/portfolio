@@ -49,10 +49,10 @@ export default function HomePage() {
       <section className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 md:gap-8 py-8 md:py-10">
         <div className="flex-shrink-0">
           <Image
-            src="/me.jpeg"
+            src="/me.png"
             alt="Fabio Tales Victorino"
-            width={120}
-            height={160}
+            width={130}
+            height={190}
             className="rounded-xl shadow-md border border-border object-cover"
           />
         </div>

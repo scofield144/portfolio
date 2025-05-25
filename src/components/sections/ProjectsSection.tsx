@@ -63,9 +63,11 @@ function ProjectCard({ project }: { project: Project }) {
 export function ProjectsSection() {
   return (
     <div className="space-y-10">
-      <header className="text-center mb-12">
-        <h1 className="text-4xl font-heading text-primary tracking-tight hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">My Projects</h1>
-        <p className="text-lg text-muted-foreground mt-2 font-ubuntu">A showcase of my technical skills and creative endeavors.</p>
+      <header className="mb-12">
+        <h1 className="text-4xl font-heading text-primary tracking-tight flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
+          <span role="img" aria-label="laptop" className="mr-3 text-4xl">💻</span>
+          Projects Showcase
+        </h1>
       </header>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8">
         {projectData.map((project) => (
