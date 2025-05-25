@@ -55,10 +55,6 @@ export default function HomePage() {
             </Button>
           </div>
           
-          {/* Optional: Short intro if needed, adapted from personalInfo.portfolioIntro */}
-          <p className="text-md text-foreground/80 mt-2 text-center md:text-left">
-            {personalInfo.portfolioIntro}
-          </p>
         </div>
       </section>
 
