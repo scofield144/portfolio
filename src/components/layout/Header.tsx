@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -30,7 +31,11 @@ export default function Header() {
   const NavLink = ({ href, label, emoji }: typeof navItems[0] & { onClick?: () => void }) => (
     <Link href={href} passHref legacyBehavior>
       <a
-        onClick={() => setIsMobileMenuOpen(false)}
+        onClick={() => {
+          if (onClick) onClick(); // Call original onClick if present (e.g., for closing mobile menu)
+          // Potentially close menu here as well if not handled by parent
+          // setIsMobileMenuOpen(false); // Uncomment if direct close needed
+        }}
         className={cn(
           "flex items-center px-3 py-2 rounded-md text-sm font-medium transition-colors font-montserrat", // Ensure heading font for nav items
           pathname === href
@@ -86,7 +91,10 @@ export default function Header() {
                 {isMobileMenuOpen ? <XIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-full max-w-xs bg-card p-4 border-l border-border">
+            <SheetContent 
+              side="right" 
+              className="w-full max-w-xs bg-card text-card-foreground p-4 border-l border-border"
+            >
               <nav className="flex flex-col space-y-3 mt-6">
                 {navItems.map((item) => (
                   <NavLink key={item.href} {...item} onClick={() => setIsMobileMenuOpen(false)} />
