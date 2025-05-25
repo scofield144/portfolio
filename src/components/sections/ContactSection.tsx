@@ -8,11 +8,11 @@ import Link from 'next/link';
 export function ContactSection() {
   return (
     <div className="space-y-10">
-      <header className="mb-12">
-        <h1 className="text-4xl font-heading text-primary tracking-tight flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
-          <span role="img" aria-label="envelope" className="mr-3 text-4xl">✉️</span>
+      <header className="mb-4"> {/* Adjusted margin */}
+        <h3 className="text-xl font-heading text-foreground flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out"> {/* Changed h1 to h3 and classes */}
+          <span role="img" aria-label="envelope" className="mr-3 text-3xl">✉️</span> {/* Ensured emoji size */}
           Get In Touch
-        </h1>
+        </h3>
       </header>
 
       <div className="grid md:grid-cols-2 gap-8 items-start">

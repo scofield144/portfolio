@@ -32,10 +32,11 @@ function NoteCard({ note }: { note: Note }) {
 export function NotesSection() {
   return (
     <div className="space-y-10">
-      <header className="mb-12">
-        <h1 className="text-4xl font-heading text-primary tracking-tight flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
-           <span role="img" aria-label="notebook" className="mr-3 text-4xl">📖</span> Notes & Insights
-        </h1>
+      <header className="mb-4"> {/* Adjusted margin */}
+        <h3 className="text-xl font-heading text-foreground flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out"> {/* Changed h1 to h3 and classes */}
+           <span role="img" aria-label="notebook" className="mr-3 text-3xl">📖</span> {/* Ensured emoji size */}
+           Notes & Insights
+        </h3>
       </header>
       <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-8">
         {notesData.map((note) => (

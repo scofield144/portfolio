@@ -7,24 +7,29 @@ function ExperienceItem({ item }: { item: Experience }) {
   return (
     <Card className="mb-8 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out transform hover:-translate-y-1 border border-border">
       <CardHeader className="pb-3">
-        <div className="flex items-center justify-between">
+        {/* Container for Title and Period, stacks on mobile and aligns items */}
+        <div className="flex flex-col items-start gap-y-1 gap-x-2 sm:flex-row sm:items-center sm:justify-between">
           <CardTitle className="text-2xl font-heading text-primary flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
             {item.emojiIcon && <span role="img" aria-label={item.role} className="mr-3 text-3xl text-accent flex-shrink-0">{item.emojiIcon}</span>}
-            {item.role}
+            {item.role} {/* This text will wrap if long */}
           </CardTitle>
-          <div className="text-sm text-muted-foreground flex items-center whitespace-nowrap">
-            <CalendarDays className="mr-2 h-4 w-4" /> {/* Or replace with 📅 emoji if preferred */}
+          <div className="text-sm text-muted-foreground flex items-center"> {/* Removed whitespace-nowrap for better wrapping */}
+            <CalendarDays className="mr-2 h-4 w-4" />
             {item.period}
           </div>
         </div>
-        <CardDescription className="text-lg text-foreground/80 ml-10 font-ubuntu">{item.company}</CardDescription>
+        {/* Company description, indented. Added mt-2 for spacing after title/date block. */}
+        <CardDescription className="text-lg text-foreground/80 ml-10 font-ubuntu mt-2">
+          {item.company} {/* This text will wrap */}
+        </CardDescription>
       </CardHeader>
-      <CardContent className="ml-10">
-        <ul className="list-disc list-outside space-y-2 pl-5 text-foreground/90">
+      {/* Responsibilities, indented. Removed list styling. */}
+      <CardContent className="ml-10"> {/* ml-10 for consistent indent with CardDescription */}
+        <div className="space-y-2 text-foreground/90">
           {item.responsibilities.map((resp, index) => (
-            <li key={index} className="text-sm leading-relaxed font-ubuntu">{resp}</li>
+            <p key={index} className="text-sm leading-relaxed font-ubuntu">{resp}</p>
           ))}
-        </ul>
+        </div>
       </CardContent>
     </Card>
   );
@@ -33,11 +38,11 @@ function ExperienceItem({ item }: { item: Experience }) {
 export function ExperienceSection() {
   return (
     <div className="space-y-10">
-      <header className="mb-12">
-        <h1 className="text-4xl font-heading text-primary tracking-tight flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
-          <span role="img" aria-label="briefcase" className="mr-3 text-4xl">💼</span>
+      <header className="mb-4"> {/* Adjusted margin */}
+        <h3 className="text-xl font-heading text-foreground flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out"> {/* Changed h1 to h3 and classes */}
+          <span role="img" aria-label="briefcase" className="mr-3 text-3xl">💼</span> {/* Ensured emoji size */}
           Professional Journey
-        </h1>
+        </h3>
       </header>
       
       <div className="relative pl-6 before:absolute before:inset-y-0 before:left-0 before:w-1 before:bg-primary/20">
