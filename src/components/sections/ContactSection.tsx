@@ -2,7 +2,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { personalInfo } from '@/lib/data';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Twitter, X } from 'lucide-react';
 import Link from 'next/link';
 
 export function ContactSection() {
@@ -19,7 +19,7 @@ export function ContactSection() {
         <Card className="shadow-lg border border-border">
           <CardHeader>
             <CardTitle className="text-2xl font-heading text-primary flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
-              <span role="img" aria-label="person" className="mr-3 text-3xl text-accent">👤</span>
+              <span role="img" aria-label="person" className="mr-3 text-3xl text-accent">😉</span>
               Contact Information
             </CardTitle>
           </CardHeader>
@@ -29,17 +29,17 @@ export function ContactSection() {
               <span>{personalInfo.location}</span>
             </div>
             <div className="flex items-center">
-              <span role="img" aria-label="envelope" className="mr-3 text-2xl text-accent">✉️</span>
-              <a href="mailto:fabio.victorino@example.com" className="hover:text-primary transition-colors">
-                fabio.victorino@example.com
+              <span role="img" aria-label="envelop" className="mr-3 text-2xl text-accent">✉️</span>
+              <a href="mailto:fabiovictorino144@gmail.com" className="hover:text-primary transition-colors">
+                fabiovictorino144@gmail.com
               </a>
             </div>
-            
+            {/* https://x.com/FbioVictorino1 */}
             <div className="pt-4">
               <h3 className="text-lg font-heading font-semibold mb-2 text-foreground">Connect with me:</h3>
               <div className="flex space-x-4">
                 <Button asChild variant="outline" size="icon" className="border-primary/50 text-primary hover:bg-primary/10">
-                  <Link href="https://github.com/fabiovictorino" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <Link href="https://github.com/scofield144" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <Github className="h-5 w-5" />
                   </Link>
                 </Button>
@@ -48,10 +48,14 @@ export function ContactSection() {
                     <Linkedin className="h-5 w-5" />
                   </Link>
                 </Button>
+                
                  <Button asChild variant="outline" size="icon" className="border-primary/50 text-primary hover:bg-primary/10">
-                  <Link href="mailto:fabio.victorino@example.com" aria-label="Email">
+                   <Link href="https://x.com/FbioVictorino1" target="_blank" rel="noopener noreferrer" aria-label="X" className="text-foreground/70 hover:text-primary transition-colors p-1">
+                      <X className="h-4 w-4" />
+                    </Link>  
+                  {/* <Link href="mailto:fabio.victorino@example.com" aria-label="Email">
                      <span role="img" aria-label="envelope" className="text-xl">✉️</span>
-                  </Link>
+                  </Link> */}
                 </Button>
               </div>
             </div>

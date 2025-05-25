@@ -13,7 +13,7 @@ export type NavItemType = {
 };
 
 export const navItems: NavItemType[] = [
-  { id: 'home', label: 'Home', emoji: '👤' },
+  { id: 'home', label: 'Home', emoji: '😎' },
   { id: 'experience', label: 'Experience', emoji: '💼' },
   { id: 'projects', label: 'Projects', emoji: '💻' },
   { id: 'notes', label: 'Notes', emoji: '📚' },
