@@ -1,3 +1,4 @@
+
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
@@ -10,17 +11,16 @@ import { Twitter, Linkedin, Github, Languages, Sun } from 'lucide-react';
 export default function HomePage() {
   return (
     <div className="space-y-12">
-      {/* New Hero Section */}
-      <section className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 md:gap-8 py-10 md:py-12">
-        {/* Left Side: Image Placeholder */}
+      {/* Hero Section */}
+      <section className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 md:gap-8 py-8 md:py-10"> {/* Reduced py */}
+        {/* Left Side: Image */}
         <div className="flex-shrink-0">
           <Image
-            src="/me.jpeg" // Changed from placeholder URL
-            alt="Fabio Tales Victorino" // Updated alt text
+            src="/me.jpeg"
+            alt="Fabio Tales Victorino"
             width={120}
             height={160}
             className="rounded-xl shadow-md border border-border object-cover"
-            // Removed data-ai-hint
           />
         </div>
 
@@ -29,10 +29,10 @@ export default function HomePage() {
           {/* Name and Badge Container */}
           <div className="bg-card p-4 rounded-lg shadow-sm border border-border w-full">
             <div className="flex items-baseline gap-2">
-              <h1 className="text-3xl font-heading text-primary leading-tight">Fabio</h1>
+              <h1 className="text-2xl font-heading text-primary leading-tight">Fabio</h1> {/* Reduced text size */}
               <Badge className="bg-yellow-400 text-black hover:bg-yellow-500 px-2.5 py-1 text-xs font-semibold self-center">DevOps</Badge>
             </div>
-            <h2 className="text-3xl font-heading text-primary leading-tight">Tales Victorino</h2>
+            <h2 className="text-2xl font-heading text-primary leading-tight">Tales Victorino</h2> {/* Reduced text size */}
           </div>
 
           {/* Icons Container */}
@@ -61,17 +61,11 @@ export default function HomePage() {
       {/* About Me Section */}
       <section id="about-me">
         <Card className="shadow-lg border border-border">
-          <CardHeader>
-            <CardTitle className="text-3xl font-heading text-primary flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
-              <span role="img" aria-label="person" className="mr-3 text-3xl">👤</span>
-              Know a Bit More About Me
-            </CardTitle>
-            <CardDescription>My journey, motivations, and aspirations in the world of technology.</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-8">
+          {/* Removed CardHeader containing "Know a Bit More About Me" */}
+          <CardContent className="space-y-8 pt-6"> {/* Added pt-6 to CardContent since CardHeader was removed */}
             {/* Education */}
             <div>
-              <h3 className="text-2xl font-heading text-foreground mb-4 flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
+              <h3 className="text-xl font-heading text-foreground mb-4 flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out"> {/* Reduced text size */}
                 <span role="img" aria-label="graduation cap" className="mr-2 text-3xl">🎓</span>
                 Formação e Influência Profissional
               </h3>
@@ -82,8 +76,8 @@ export default function HomePage() {
                       <div className="flex items-start space-x-3">
                         {edu.emojiIcon && <span role="img" aria-label={edu.degree} className="text-3xl text-primary mt-1 flex-shrink-0">{edu.emojiIcon}</span>}
                         <div>
-                          <h4 className="font-heading font-semibold text-lg text-primary">{edu.institution}</h4>
-                          <p className="text-muted-foreground">{edu.degree}</p>
+                          <h4 className="font-heading font-semibold text-base text-primary">{edu.institution}</h4> {/* Reduced text size */}
+                          <p className="text-muted-foreground text-sm">{edu.degree}</p> {/* Ensured text-sm for consistency */}
                           <p className="text-sm text-muted-foreground">{edu.period}</p>
                         </div>
                       </div>
@@ -100,7 +94,7 @@ export default function HomePage() {
               {aboutData.map((item, index) => (
                 <Card key={index} className="bg-background/50 hover:shadow-md transition-shadow border border-border/50">
                   <CardHeader>
-                    <CardTitle className="text-xl font-heading flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">
+                    <CardTitle className="text-lg font-heading flex items-center hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out"> {/* Reduced text size */}
                       {item.emojiIcon && <span role="img" aria-label={item.title} className="mr-2 text-3xl text-accent">{item.emojiIcon}</span>}
                       {item.title}
                     </CardTitle>
@@ -117,7 +111,7 @@ export default function HomePage() {
 
       {/* Quick Navigation Links */}
       <section className="py-8">
-          <h2 className="text-2xl font-heading text-center mb-6 text-primary hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">Explore More</h2>
+          <h2 className="text-xl font-heading text-center mb-6 text-primary hover:scale-105 motion-safe:transition-transform motion-safe:duration-200 ease-in-out">Explore More</h2> {/* Reduced text size */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6">
             {[
               { title: "My Experience", href: "/experience", emoji: "💼", description:"Delve into my professional journey." },
@@ -129,7 +123,7 @@ export default function HomePage() {
                 <Card className="hover:shadow-xl transition-shadow duration-300 h-full flex flex-col border border-border">
                   <CardHeader className="flex-row items-center space-x-3 pb-3">
                     <span role="img" aria-label={link.title} className="text-3xl text-accent">{link.emoji}</span>
-                    <CardTitle className="text-xl font-heading text-primary group-hover:text-accent transition-colors hover:scale-105 motion-safe:duration-200 ease-in-out">{link.title}</CardTitle>
+                    <CardTitle className="text-lg font-heading text-primary group-hover:text-accent transition-colors hover:scale-105 motion-safe:duration-200 ease-in-out">{link.title}</CardTitle> {/* Reduced text size */}
                   </CardHeader>
                   <CardContent className="flex-grow">
                     <p className="text-sm text-muted-foreground">{link.description}</p>
