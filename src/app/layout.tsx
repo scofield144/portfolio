@@ -1,9 +1,11 @@
+
 import type { Metadata } from 'next';
 import { Montserrat, Ubuntu } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Toaster } from '@/components/ui/toaster';
+import { ThemeProvider } from '@/components/theme-provider';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -14,7 +16,7 @@ const montserrat = Montserrat({
 const ubuntu = Ubuntu({
   subsets: ['latin'],
   variable: '--font-ubuntu',
-  weight: ['400', '500', '700'], // Added 500 for potential medium weight
+  weight: ['400', '500', '700'],
 });
 
 export const metadata: Metadata = {
@@ -28,14 +30,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${montserrat.variable} ${ubuntu.variable}`}>
-      <body className="antialiased font-ubuntu flex flex-col min-h-screen"> {/* Changed default font reference */}
-        <Header />
-        <main className="flex-grow container mx-auto px-4 py-8">
-          {children}
-        </main>
-        <Footer />
-        <Toaster />
+    <html lang="en" className={`${montserrat.variable} ${ubuntu.variable}`} suppressHydrationWarning>
+      <body className="antialiased font-ubuntu flex flex-col min-h-screen">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <main className="flex-grow container mx-auto px-4 py-8">
+            {children}
+          </main>
+          <Footer />
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );
