@@ -76,7 +76,7 @@ export default function HomePage() {
       <section className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-6 md:gap-8 py-4 md:py-6">
         <div className="flex-shrink-0">
           <Image
-            src="/me.jpeg"
+            src="/me.png"
             alt="Fabio Tales Victorino"
             width={120} 
             height={160} 
