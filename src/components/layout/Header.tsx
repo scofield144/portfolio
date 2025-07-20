@@ -19,9 +19,9 @@ export default function Header() {
     return (
       <header className="bg-card shadow-md sticky top-0 z-50 border-b border-border">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary font-heading">
-          Fabio's Portfolio
-          </div>
+          {/* <div className="text-2xl font-bold text-primary font-heading">
+          hi
+          </div> */}
           {/* Placeholder for potential mobile trigger if needed for other header actions */}
         </div>
       </header>
@@ -31,9 +31,9 @@ export default function Header() {
   return (
     <header className="bg-card shadow-md sticky top-0 z-50 border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors font-heading">
-          Fabio's Portfolio
-        </Link>
+        {/* <Link href="/" className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors font-heading">
+          hi
+        </Link> */}
         {/* Desktop Navigation and Mobile Sheet Trigger are removed from here */}
       </div>
     </header>
